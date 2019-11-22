@@ -9,12 +9,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script src="https://kit.fontawesome.com/3b666215d3.js" crossorigin="anonymous"></script>
-  <script src="api/football.js"></script>
+  <script src="api/hotels.js" ></script>
 </head>
-<body class="bg-light" onload="f1()">
+<body  onload="getData()">
 
         <nav class="navbar navbar-expand-md bg-info navbar-dark">
-            <a class="navbar-brand" href="index.html">Project</a>
+            <a class="navbar-brand" href="index.html">assesment-project</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -24,16 +24,16 @@
                         <a class="nav-link" href="home.html"><i class="fas fa-home"></i> Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="hotels.html"><i class="fas fa-hotel"></i> Hotels</a>
+                        <a class="nav-link" href="hotels.html"><i class="fas fa-hotel"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="football.html"><i class="fas fa-futbol"></i> Football</a>
+                        <a class="nav-link" href="football.html"><i class="fas fa-futbol"></i></a>
                     </li>
                     <li class="nav-item">
-                            <a class="nav-link" href="news.html"><i class="fas fa-newspaper"></i> News</a>
+                            <a class="nav-link" href="news.html"><i class="fas fa-newspaper"></i></a>
                         </li>
                     <li class="nav-item">
-                          <a class="nav-link" href="makeup.html"><i class="fas fa-heart"></i> MakeUp</a>
+                          <a class="nav-link" href="makeup.html"><i class="fas fa-heart"></i></a>
                       </li>    
                     <li>
                         <div class="input-group">
@@ -46,9 +46,14 @@
                 </ul>
             </div>  
         </nav>
-    </body>
-    <div class="justify-content-center d-flex"><img class="p-5" id="loading" src="public/4.gif"></div>
-    <div class="container mt-5">
-        <div id="football" class="row"></div>
-    </div>
-</html>
+    <div class="container mt-2">
+   <div class="justify-content-center d-flex"><img class="p-5" id="loading" src="public/4.gif"></div>
+<table class="table table-striped table-hover table-bordered" style="display: none;" id="main">
+    <tr>
+        <th>Name</th>
+        <th><i class="fas fa-bed"></i> Total Rooms</th>
+        <th>Country</th>
+        <th><i class="fas fa-phone"></i> Phone Number</th>
+    </tr>
+</table>
+</div>
